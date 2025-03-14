@@ -879,7 +879,7 @@ delete_ports() {
 }
 
 update_geo() {
-    echo -e "${green}\t1.${plain} Loyalsoldier (geoip.dat, geosite.dat)"
+    echo -e "${green}\t1.${plain} Malikshi (geoip.dat, geosite.dat)"
     echo -e "${green}\t2.${plain} chocolate4u (geoip_IR.dat, geosite_IR.dat)"
     echo -e "${green}\t3.${plain} runetfreedom (geoip_RU.dat, geosite_RU.dat)"
     echo -e "${green}\t0.${plain} Back to Main Menu"
@@ -894,9 +894,9 @@ update_geo() {
     1)
         systemctl stop x-ui
         rm -f geoip.dat geosite.dat
-        wget -N https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
-        wget -N https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
-        echo -e "${green}Loyalsoldier datasets have been updated successfully!${plain}"
+        wget -N https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geoip.dat
+        wget -N https://github.com/malikshi/v2ray-rules-dat/releases/latest/download/geosite.dat
+        echo -e "${green}Malikshi datasets have been updated successfully!${plain}"
         restart
         ;;
     2)
